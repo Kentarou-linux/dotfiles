@@ -1,0 +1,38 @@
+# Required:
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'leico/autodate.vim'         #更新時間をファイルに書き込む
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'        #ステータス
+
+[[plugins]]
+repo = 'ayu-theme/ayu-vim'          #ayutheme
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'        #ファイル・ディレクトリのツリーを表示
+
+[[plugins]]
+repo = 'cohama/lexima.vim'          #自動閉じカッコ
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'       #各種ファイルタイプ用のプラグイン(色がつく)
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'          #補完や定義の参照ができるプラグイン
+merge = 0
+rev = 'release'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'            #htmlコーディング
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'    #markdownの補完
+
+[[plugins]]
+repo = 'previm/previm'              #markdownのプレビュー
+
+[[plugins]]
+repo = 'alvan/vim-closetag'

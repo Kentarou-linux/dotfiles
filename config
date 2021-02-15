@@ -1,0 +1,195 @@
+[global_config]
+  handle_size = 1
+  borderless = True
+  scroll_tabbar = True
+  title_transmit_fg_color = "#000000"
+  title_inactive_fg_color = "#a40000"
+  title_inactive_bg_color = "#002b36"
+  inactive_color_offset = 1.0
+  suppress_multiple_term_dialog = True
+  always_split_with_profile = True
+  title_use_system_font = False
+  title_font = Ubuntu Mono 15
+[keybindings]
+  cycle_next = <Primary><Shift>j
+  split_vert = <Primary><Shift>l
+  close_term = <Primary>w
+  paste = <Primary><Shift>v
+  search = <Primary>f
+  layout_launcher = <Primary><Alt>backslash
+[profiles]
+  [[default]]
+    background_color = "#222222"
+    background_darkness = 0.77
+    cursor_color = "#aaaaaa"
+    font = Ubuntu Mono 19
+    foreground_color = "#00ff00"
+    palette = "#000000:#cd0000:#00ff00:#cdcd00:#729fcf:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    use_system_font = False
+  [[New Profile]]
+    allow_bold = False
+    background_color = "#fdf6e3"
+    cursor_color = "#aaaaaa"
+    font = Ubuntu Mono 15
+    foreground_color = "#657b83"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[2]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 72:27
+      maximised = True
+      fullscreen = False
+      size = 1848, 1016
+      title = kentarou@ubuntu:~
+      last_active_term = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 922
+      ratio = 0.5002712967986978
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 30ed9626-9274-40cb-9820-b57acec280fa
+  [[dev]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 72:27
+      maximised = True
+      fullscreen = False
+      size = 1848, 1016
+      title = kentarou@ubuntu:~
+      last_active_term = 74f398a6-af8a-476e-8e38-03236d970797
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 924
+      ratio = 0.5013564839934889
+    [[[child2]]]
+      type = VPaned
+      parent = child1
+      order = 0
+      position = 714
+      ratio = 0.7062314540059347
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = 74f398a6-af8a-476e-8e38-03236d970797
+    [[[child5]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 712
+      ratio = 0.7042532146389713
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = 30ed9626-9274-40cb-9820-b57acec280fa
+    [[[terminal7]]]
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      uuid = 598f498b-a407-4e18-80de-7b2ec368179e
+  [[dev2]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 72:27
+      maximised = True
+      fullscreen = False
+      size = 1848, 1016
+      title = kentarou@ubuntu:~
+      last_active_term = 30ed9626-9274-40cb-9820-b57acec280fa
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 636
+      ratio = 0.3450895279435703
+    [[[child2]]]
+      type = VPaned
+      parent = child1
+      order = 0
+      position = 714
+      ratio = 0.7062314540059347
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = 74f398a6-af8a-476e-8e38-03236d970797
+    [[[child5]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 712
+      ratio = 0.7042532146389713
+    [[[child6]]]
+      type = HPaned
+      parent = child5
+      order = 0
+      position = 605
+      ratio = 0.5016583747927031
+    [[[terminal7]]]
+      type = Terminal
+      parent = child6
+      order = 0
+      profile = default
+      uuid = 30ed9626-9274-40cb-9820-b57acec280fa
+    [[[terminal8]]]
+      type = Terminal
+      parent = child6
+      order = 1
+      profile = default
+      uuid = 56f5956c-76e4-44d9-ba61-1d6f7526910c
+    [[[terminal9]]]
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      uuid = 598f498b-a407-4e18-80de-7b2ec368179e
+[plugins]
