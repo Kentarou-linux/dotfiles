@@ -236,6 +236,7 @@ alias stop="systemctl stop"
 alias restart="systemctl restart"
 alias vim="nvim"
 alias blue="gnome-control-center bluetooth"
+alias e="exit"
 #google
 #g() {
 #    google-chrome "$*"

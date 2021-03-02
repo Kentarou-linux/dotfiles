@@ -36,3 +36,7 @@ repo = 'previm/previm'              #markdownのプレビュー
 
 [[plugins]]
 repo = 'alvan/vim-closetag'
+
+[[plugins]]                         #pythonの補完プラグイン
+repo =  'davidhalter/jedi-vim'
+on_ft = 'python'
