@@ -13,9 +13,9 @@
 [keybindings]
   cycle_next = <Primary><Shift>j
   split_vert = <Primary><Shift>l
-  close_term = <Primary>w
+  close_term = <Primary><Shift>w
   paste = <Primary><Shift>v
-  search = <Primary>f
+  search = <Primary><Shift>f
   layout_launcher = <Primary><Alt>backslash
 [profiles]
   [[default]]
