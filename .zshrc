@@ -8,7 +8,7 @@ fi
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
-export ZSH="/home/kentarou/.oh-my-zsh"
+export ZSH="/home/kebab/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
 plugins=(
