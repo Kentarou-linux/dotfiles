@@ -23,16 +23,20 @@
     background_darkness = 0.77
     cursor_color = "#aaaaaa"
     font = Ubuntu Mono 19
-    foreground_color = "#00ff00"
+    foreground_color = "#3ffa10"
     palette = "#000000:#cd0000:#00ff00:#cdcd00:#729fcf:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
     use_system_font = False
-  [[New Profile]]
-    allow_bold = False
-    background_color = "#fdf6e3"
+  [[hacker]]
+    background_color = "#030c00"
+    background_darkness = 0.93
+    background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Ubuntu Mono 15
-    foreground_color = "#657b83"
+    font = Ubuntu Mono 20
+    foreground_color = "#8ae234"
+    palette = "#000000:#cc0000:#3ffa10:#c4a000:#729fcf:#cc0000:#06989a:#d3d7cf:#555753:#ef2929:#00ff00:#fce94f:#204a87:#75507b:#34e2e2:#eeeeec"
     use_system_font = False
+  [[New Profile]]
+    cursor_color = "#aaaaaa"
 [layouts]
   [[default]]
     [[[window0]]]
@@ -41,7 +45,7 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = default
+      profile = hacker
   [[2]]
     [[[child0]]]
       type = Window
@@ -64,13 +68,13 @@
       type = Terminal
       parent = child1
       order = 0
-      profile = default
+      profile = hacker
       uuid = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
     [[[terminal3]]]
       type = Terminal
       parent = child1
       order = 1
-      profile = default
+      profile = hacker
       uuid = 30ed9626-9274-40cb-9820-b57acec280fa
   [[dev]]
     [[[child0]]]
@@ -100,13 +104,13 @@
       type = Terminal
       parent = child2
       order = 0
-      profile = default
+      profile = hacker
       uuid = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
     [[[terminal4]]]
       type = Terminal
       parent = child2
       order = 1
-      profile = default
+      profile = hacker
       uuid = 74f398a6-af8a-476e-8e38-03236d970797
     [[[child5]]]
       type = VPaned
@@ -118,13 +122,13 @@
       type = Terminal
       parent = child5
       order = 0
-      profile = default
+      profile = hacker
       uuid = 30ed9626-9274-40cb-9820-b57acec280fa
     [[[terminal7]]]
       type = Terminal
       parent = child5
       order = 1
-      profile = default
+      profile = hacker
       uuid = 598f498b-a407-4e18-80de-7b2ec368179e
   [[dev2]]
     [[[child0]]]
@@ -154,13 +158,13 @@
       type = Terminal
       parent = child2
       order = 0
-      profile = default
+      profile = hacker
       uuid = 4fe4375b-8e3a-46e4-b4af-7fc46669e5b1
     [[[terminal4]]]
       type = Terminal
       parent = child2
       order = 1
-      profile = default
+      profile = hacker
       uuid = 74f398a6-af8a-476e-8e38-03236d970797
     [[[child5]]]
       type = VPaned
@@ -178,18 +182,18 @@
       type = Terminal
       parent = child6
       order = 0
-      profile = default
+      profile = hacker
       uuid = 30ed9626-9274-40cb-9820-b57acec280fa
     [[[terminal8]]]
       type = Terminal
       parent = child6
       order = 1
-      profile = default
+      profile = hacker
       uuid = 56f5956c-76e4-44d9-ba61-1d6f7526910c
     [[[terminal9]]]
       type = Terminal
       parent = child5
       order = 1
-      profile = default
+      profile = hacker
       uuid = 598f498b-a407-4e18-80de-7b2ec368179e
 [plugins]

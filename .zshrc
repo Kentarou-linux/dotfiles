@@ -1,10 +1,16 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
 export ZSH="/home/kentarou/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
-
 plugins=(
     git
     zsh-autosuggestions
@@ -104,6 +110,25 @@ fi
 #追加設定
 #--------------------------------------------------------------------------------------
 
+prompt_context() {
+  local user=`whoami`@`hostname`
+
+  if [[ "$user" != "root" || -n "$SSH_CONNECTION" ]]; then
+   # prompt_segment black yellow " %(!.%{%F{black}%}.)$user "
+    prompt_segment black red " %(!.%{%F{black}%}.)$user "
+  else
+    prompt_segment red red " %(!.%{%F{%}.) $user "
+  fi
+}
+
+# PROMPT='
+#%{%f%b%k%}$(build_prompt)
+# %B%F{yellow}❯❯%f%b '
+
+ PROMPT='
+%{%f%b%k%}$(build_prompt)
+ %B%F{red}❯❯%f%b '
+
 chpwd() { ls }
 set opt auto_pushd
 export PAGER=most
@@ -129,16 +154,15 @@ alias start="systemctl start"
 alias stop="systemctl stop"
 alias restart="systemctl restart"
 alias vim="nvim"
-alias blue="gnome-control-center bluetooth"
+#alias blue="gnome-control-center bluetooth"
+alias blue="bluetoothctl connect 00:00:00:00:58:CA
+"
 alias e="exit"
-#google
-#g() {
-#    google-chrome "$*"
-#}
+alias wifi="nmcli device wifi list"
 
 #google検索
 gs() {
-    google-chrome https://www.google.com/search?q="$*"
+    google-chrome https://www.google.com/search?q="$*&hl=en"
 }
 
 #google翻訳
@@ -150,3 +174,10 @@ gt() {
 # gt() {
 #    trans -b :ja "$*"
 # }
+
+error() {
+    $* |& read -d'あ' error ; gt $error
+}
+
+
+
