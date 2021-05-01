@@ -20,15 +20,16 @@
 [profiles]
   [[default]]
     background_color = "#222222"
-    background_darkness = 0.77
+    background_darkness = 0.87
+    background_type = transparent
     cursor_color = "#aaaaaa"
     font = Ubuntu Mono 19
     foreground_color = "#3ffa10"
     palette = "#000000:#cd0000:#00ff00:#cdcd00:#729fcf:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
     use_system_font = False
   [[hacker]]
-    background_color = "#030c00"
-    background_darkness = 0.93
+    background_color = "#010f23"
+    background_darkness = 0.87
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = Ubuntu Mono 20

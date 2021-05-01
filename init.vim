@@ -67,8 +67,9 @@ let g:previm_open_cmd = 'google-chrome'
 "キーバインド
 "--------------------------------------------------------------------------
 "nnoremap <silent><C-n>  :NERDTreeToggle<CR>     "NerdTreeのキーバインド
-nnoremap <silent>zz  :w !python3<CR>
+"nnoremap <silent><C-CR>  :w !python3<CR>
 
+nnoremap <C-M>  :w !python3<CR>
 "##### auto fcitx  ###########
 function! Fcitx()
    let fcitx_status = system("fcitx-remote")
@@ -79,4 +80,4 @@ endfunction
 autocmd InsertLeave * call Fcitx()
 "##### auto fcitx end ######
 
-nmap <zz> :w !python3
+"nmap <zz> :w !python3

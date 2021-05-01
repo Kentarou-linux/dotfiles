@@ -134,6 +134,7 @@ set opt auto_pushd
 export PAGER=most
 export PATH=$PATH:/usr/local/bin/
 export PATH=$PATH:/home/kentarou/.config/nvim/
+export PATH=$PATH:/home/kentarou/eclipse/java-2021-03/eclipse
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=$LANG
@@ -155,11 +156,10 @@ alias stop="systemctl stop"
 alias restart="systemctl restart"
 alias vim="nvim"
 #alias blue="gnome-control-center bluetooth"
-alias blue="bluetoothctl connect 00:00:00:00:58:CA
-"
+#alias blue="bluetoothctl connect 00:00:00:00:58:CA
 alias e="exit"
 alias wifi="nmcli device wifi list"
-
+alias ma="cd eclipse-workspace/Mahjong_test/src/test"
 #google検索
 gs() {
     google-chrome https://www.google.com/search?q="$*&hl=en"
@@ -178,6 +178,16 @@ gt() {
 error() {
     $* |& read -d'あ' error ; gt $error
 }
+
+blue(){
+    bluetoothctl connect 00:00:00:00:58:CA
+    result=`echo $?`
+    if [ $result -eq 0 ]
+    then
+        exit
+    fi
+}
+
 
 
 
