@@ -98,6 +98,7 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias ma="cd /home/kebab/eclipse-workspace/mahjong_test/src/test"
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
@@ -181,3 +182,7 @@ error() {
 
 
 
+alias wifi="nmcli device wifi connect "SPWN_N36_586cae" password 8c98718c67e60 ifname wlp2s0"
+export PATH=$PATH:/home/kebab/eclipse/jee-2021-03/eclipse
+
+# cat /proc/cpuinfo

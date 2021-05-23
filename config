@@ -22,7 +22,7 @@
     background_color = "#222222"
     background_darkness = 0.77
     cursor_color = "#aaaaaa"
-    font = Ubuntu Mono 14
+    font = Monospace 15
     foreground_color = "#3ffa10"
     palette = "#000000:#cd0000:#00ff00:#cdcd00:#729fcf:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
     use_system_font = False
@@ -31,12 +31,16 @@
     background_darkness = 0.93
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Ubuntu Mono 17
+    font = Ricty Diminished 17
     foreground_color = "#8ae234"
     palette = "#000000:#cc0000:#3ffa10:#c4a000:#729fcf:#cc0000:#06989a:#d3d7cf:#555753:#ef2929:#00ff00:#fce94f:#204a87:#75507b:#34e2e2:#eeeeec"
     use_system_font = False
   [[New Profile]]
     cursor_color = "#aaaaaa"
+    font = Ubuntu Mono 17
+    foreground_color = "#2ae0c7"
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#2ae0c7:#cd00cd:#00cdcd:#faebd7:#404040:#ff0000:#00ff00:#ffff00:#2ae0c7:#ff00ff:#00ffff:#ffffff"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[window0]]]
