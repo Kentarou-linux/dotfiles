@@ -50,6 +50,7 @@ set cursorline      "現在のカーソルを強調する
 set showmatch       "対応する括弧の強調表示
 set list        "spaceを可視化
 set listchars=tab:>-,trail:> "スペースを>で表示
+"set wildmode=list:longest
 
 
 set termguicolors       "テーマをayuにする
@@ -68,6 +69,14 @@ let g:previm_open_cmd = 'google-chrome'
 "--------------------------------------------------------------------------
 "nnoremap <silent><C-n>  :NERDTreeToggle<CR>     "NerdTreeのキーバインド
 nnoremap <silent>zz  :w !python3<CR>
+nnoremap <Esc><Esc> :noh<CR>
+nnoremap <CR> A<CR><ESC>
+nnoremap <C-e> $
+nnoremap <C-a> 0
+nnoremap U <c-r>
+nnoremap <Space> ;
+nnoremap J 10j
+nnoremap K 10k
 
 "##### auto fcitx  ###########
 function! Fcitx()
